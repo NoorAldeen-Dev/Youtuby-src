@@ -1,0 +1,378 @@
+@font-face {
+    font-family:"font1" ;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+#top-menu .bg-light{
+    background-color: white !important;
+}
+body{
+    font-family: "font1",Arial, sans-serif;
+    background-color: #fafafa;
+}
+[type=email],[type=password]{
+    direction: rtl;
+    text-align: right;
+}
+a{
+    color: black;
+    text-decoration: none !important;
+}
+button{
+    background-color: transparent !important;
+    color: #fe0000 !important;
+    border-color: #fe0000 !important;
+}
+button:hover{
+    color: white !important;
+    background-color:#fe0000 !important;
+}
+.nav-link:hover,.active>.nav-link{
+    color: white !important;
+    background-color: #fe0000 !important;
+}
+.fa-youtube{
+    color: #fe0000;
+}
+input:focus,
+button:focus{
+    box-shadow: none !important;
+}
+.card-icons{
+    position: relative;
+}
+.time{
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    background-color: black;
+    color: white;
+
+}
+.fa-circle-play{
+    position: absolute;
+    top:50%;
+    right: 50%;
+    transform: translate(50% , -50%);
+    transition: all ease 1s;
+    color: #F0F3F4;
+    display: none;
+}
+.card:hover .fa-circle-play{
+    display: inline;
+}
+.card:hover{
+    transform: translateY(-.9%);
+}
+.card{
+    transition: transform .5s;
+}
+.card .card-title{
+    height: 50px;
+    overflow: hidden;
+}
+#top-menu .fa-bars{
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    z-index:3;
+    display: none;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 85px;
+    background-color: white;
+}
+.sidebar .purple{
+    color: black;
+}
+.sidebar .list-group-item:hover{
+    color: white;
+    background-color: #fe0000;
+}
+.sidebar .list-group-item:hover .purple{
+    color: white;
+}
+.sidebar .list-group-item{
+    width: 17rem;
+}
+.sidebar::-webkit-scrollbar{
+    background-color: #0f0c29;
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: #dd1818ed;
+    width: 8px;
+}
+.layer
+{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+}
+.navbar .search-icon{
+    color: #fe0000;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    left: 155px;
+    display: none;
+
+}
+.navbar .search-icon:hover{
+    color: white;
+    background-color: #fe0000;
+}
+.search-click{
+    position: fixed;
+    top: 72px;
+    right: 0px;
+    border: none;
+    background-color: #efeeee;
+    display: none;
+    z-index: 1;
+
+}
+.search-click:focus{
+    background-color: #efeeee;
+}
+@media (max-width: 1192px){
+    .navbar .collapse .form-inline{
+        display: none;
+    }
+    .navbar .search-icon {
+        display: inline;
+    }
+}
+@media (min-width:1192px){
+    .search-click{
+        display: none !important;
+    }
+}
+@media (min-width:576px) and (max-width:1335px){
+    .card .channel-img>img{
+        width: 35px !important;
+    }
+    .card .channel-img>.card-text{
+        font-size: 15px;
+
+    }
+    .card .channel-img{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+}
+@media (max-width:575px) {
+    .navbar .search-icon{
+        left: 118px;
+    }
+}
+
+
+/*******************************************
+Channel CSS
+*******************************************/
+.channel-page .video-section .card:hover{
+    transform: translateY(0%);
+}
+
+.social-media{
+    bottom:10px ;
+    left:20px;
+}
+.csc{
+    color: white !important;
+    background-color: red !important;
+}
+@media (max-width:639px){
+    .col-8 .ch-img{
+        margin-right: 0px !important;
+    }
+    .nav .nav-item {
+        font-size: 15px !important;
+    }
+
+}
+@media (max-width:575px){
+    .channel-page .social-media{
+        display: none;
+    }
+    .banner .img-fluid{
+        height: 100px;
+    }
+    .channel-page .subc{
+        width: 100%;
+    }
+    .ch-nav{
+        flex-wrap:nowrap;
+        overflow: auto;
+    }
+    .ch-nav .nav-item{
+        align-items: center;
+    }
+
+    .ch-nav .nav-item a {
+        width: 140px;
+        text-align: center;
+    }
+    .channel-page .channel-small-logo{
+        width: 50px;
+    }
+    .channel-page iframe{
+        height: 200px;
+    }
+}
+/*******************************************
+Log CSS
+*******************************************/
+.longtxt{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+.filter-right{
+    background-color: white;
+    height: 570px;
+}
+.active{
+    background-color: #fe0000 !important;
+    border-color: black !important;
+}
+.fa-xmark{
+    position: absolute;
+    right: 9px;
+    top: 12px;
+    cursor: pointer;
+    color: white;
+}
+.fa-xmark:hover{
+    color: #fe0000;
+}
+@media (max-width:1204px){
+    .channel-img{
+        display: block !important;
+        margin-top: 10px;
+    }
+    .card .card-body .channel-img>img{
+        margin-right: 0px !important;
+    }
+    /*.card .card-title{
+        height: 25px;
+        white-space: nowrap;
+        overflow: hidden ;
+        text-overflow: ellipsis;
+    }*/
+}
+/*******************************************
+Search CSS
+*******************************************/
+#filter{
+    cursor: pointer ;
+}
+.allcheck{
+    display: none;
+}
+.longtxt{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+input:checked+span{
+    color: #fe0000;
+}
+
+@media (max-width:992px){
+    .channel-img{
+        display: block !important;
+        margin-top: 10px;
+    }
+    .card .card-body .channel-img>img{
+        margin-right: 0px !important;
+    }
+    /*.card .card-title{
+        height: 25px;
+        white-space: nowrap;
+        overflow: hidden ;
+        text-overflow: ellipsis;
+    }*/
+}
+/*******************************************
+Watch CSS
+*******************************************/
+.like{
+    color: #0070FF;
+}
+.fa-thumbs-down{
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+.fa-thumbs-up{
+    cursor: pointer;
+}
+.watch-page .card:hover{
+    transform: translateY(0%);
+}
+.card-inner{
+    display: none;
+}
+.loved{
+    color: red !important;
+}
+textarea:focus{
+    box-shadow: none !important;
+}
+.v-icons > span{
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+
+}
+
+@media (min-width: 992px) and (max-width:1339px){
+     .watch-page .text-muted:not(.right-side .text-muted){
+        display:none;
+    }
+
+}
+@media (min-width:576px) and (max-width:1335px){
+    .right-side .card .channel-img>img{
+        width: 65px !important;
+    }
+    
+}
+
+@media (max-width:575px){
+    .reply-time{
+        font-size: 10px;
+    }
+    .vidoe-title{
+        font-size: 17px;
+    }
+    .v-icons{
+        font-size: 14px;
+    }
+    .v-icons > span{
+        padding: 2px 5px;
+        display: inline-block;
+    }
+    .right-side .card .channel-img>img{
+        width: 50px;
+    }
+    .watch-page .subc{
+        font-size: 14px;
+    }
+    .reply-time{
+        font-size: 14px;
+    }
+    .com-txt{
+        font-size: 14px;
+    }
+    .com-stars{
+        font-size: 14px;
+    }
+}

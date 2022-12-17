@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body class="rtl">
+    <!--القامئة العلوية-->
+    <div class="layer"></div>
+    <div id="top-menu">
+      <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-3">
+          <i class="fa-solid fa-bars fa-lg" id="bars"></i>
+          <b>
+            <a class="navbar-brand mr-sm-3" href="index.html">YouTube
+              <span><i class="fa-brands fa-youtube fa-xl"></i></span>
+            </a>
+          </b>
+
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item active ">
+                <a class="nav-link px-3 " href="">الفيديوهات المقترحة</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link px-3 " href="#">المرفوعة حديثًا</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link px-3 " href="# ">الفيديوهات الرائجة</a>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <input class="form-control ml-sm-2" type="search" placeholder="ابحث" aria-label="Search">
+              <button onclick="location.href='search.html';" class="btn btn-outline-success my-2 my-sm-0" type="submit">ابحث</button>
+            </div>
+
+          </div>
+          <i class="fa-solid fa-magnifying-glass ml-4 search-icon"></i>
+          <button type="button" class="btn btn-outline-primary mr-3" data-toggle="modal" data-target="#exampleModal">
+            تسجيل الدخول
+          </button>
+        </nav>
+        <input type="search" placeholder="ابحث عن .." class="search-click form-control  py-4 mx-0">
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email" class="col-form-label">البريد الإلكتروني:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-form-label">كلمة المرور:</label>
+                    <input type="password" class="form-control" id="password">
+                  </div>
+                </form>            
+              </div>
+              <div class="modal-footer">
+              <a href="#">نسيت كلمة المرور</a>
+              <a href="#" class="mx-auto">إنشاء حساب</a>
+                <button type="button" class="btn btn-primary">دخول</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5 mt-4">
+          <div id="wrap">
+            <div class="sidebar">
+              <div class="list-group list-group-flush pr-0" id="list-tab">
+                <a class="list-group-item list-group-item-action" href="index.html" ><i class="fa-solid fa-house ml-2 purple"></i>الصفحة الرئيسية</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-compass ml-2 purple"></i>الفيديوهات المقترحة</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid  fa-hourglass-half ml-2 purple"></i>المرفوعة حديثًا</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-video ml-2 purple"></i>فيديوهاتي</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-fire ml-2 purple"></i>الفيديوهات الرائجة</a>
+                <a class="list-group-item list-group-item-action" href="log.html" ><i class="fa-solid fa-clock-rotate-left ml-2 purple"></i>سجل المشاهدة</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-bell ml-2 purple"></i>الإشتراكات</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-clapperboard ml-2 purple"></i>الأفلام والعروض</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-gamepad ml-2 purple"></i>ألعاب الفيديو    </a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid  fa-shirt ml-2 purple"></i>الموضة والجمال</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-graduation-cap ml-2 purple"></i>محتوى تعليمي</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-face-laugh-squint ml-2 purple"></i>محتوى ترفيهي</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-utensils ml-2 purple"></i>محتوى طبخ</a>
+                <a class="list-group-item list-group-item-action"  href="#" ><i class="fa-solid fa-gear ml-2 purple"></i>الإعدادات</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--جسم الصفحة-->
+    <div class="content mt-3">
+      <div class="container-fluid">
+        <h4 class="py-5">الفيديوهات المقترحة</h4>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/hsoub.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">9:49</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body p-0 pt-2 ml-2">
+                  <p class="card-title">أريد تعلم البرمجة من أين أبدأ؟</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 859,995 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span>  قبل ثلاث سنوات  </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/ch-logo.png" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">أكاديمية حاسوب</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/artgle.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">2:07:41</span>
+                <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body pt-2 ml-2 p-0">
+                  <p class="card-title">Diriliş Ertuğrul 150. Bölüm (Sezon Finali)</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span>22,900,053 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل أربع سنوات </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/TRT.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">TRT İzle</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/aboflah.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">16:39</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body pt-2 ml-2 p-0">
+                  <p class="card-title">بمناسبة دخولي 12 مليون قفزة من الطائرة😨</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 10,708,968 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل سنة </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/Abof.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">AboFlah</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/zenglish.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">13:38</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body  pt-2 ml-2 p-0">
+                  <p class="card-title">قصص انجليزية قصيرة : كورس قراءة اللغة الانجليزية 1</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span>  3,008,853 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل سنة </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/english.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">ZAmericanEnglish</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/dross.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">38:52</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body pt-2 ml-2 p-0">
+                  <p class="card-title">ملخص أهم كورس حضرته في حياتي : تعلم كيف تتعلم!</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 1,126,313 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل ستة اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/dros.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">دروس أونلاين</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/niv.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">4:52</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body pt-2 ml-2 p-0">
+                  <p class="card-title">أقصى العيون | نايف الشرهان | 1442</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span>  42,401 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل يومين</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/niph.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text"> نايف الشرهان</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="col-12"></div>
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/Ali.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">24:52</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body  pt-2 ml-2 p-0">
+                  <p class="card-title">خطوات تساعدك على معرفة هدفك في الحياة</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span>  162,497 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل شهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/alibook.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text"> Ali Muhammad Ali</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/mixy.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">12:41</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body  pt-2 ml-2 p-0">
+                  <p class="card-title">جبل جليدي ضخم كان على وشك أن يحطم هذين الرجلين</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 258,787 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span>  قبل خمسة اشهر </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/mix.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">مكس</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/hasn.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">37:18</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body pt-2 ml-2 p-0">
+                  <p class="card-title">صحح معلوماتك عن الجنة</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 305,532 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل سنتين </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/hosiny.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">قناة حسن الحسيني</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/read.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">18:18</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body  pt-2 ml-2 p-0">
+                  <p class="card-title">التركيز المطلق في عالم متشتت II ملخص كتاب : العمل العميق</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 175,502  مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل 10 أشهر </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/reading.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">ReadTube - جيل يقرأ</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/ahmed1.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">25:28</span>
+                  <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body  pt-2 ml-2 p-0">
+                  <p class="card-title">تلاوة بالترتيل القصصي سورة مريم #رمضان ١٤٤٣</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 84,576 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل 3 أشهر </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/icons/Ahmed.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">Ahmad Al Nufais I أحمد النفيس</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card p-1 mb-4">
+              <div class="card-icons">                  
+                <a href="watch.html">
+                  <img src="img/thumbnail/Alp.jpg" class="card-img-top" alt="Card Img">
+                  <span class="time px-1">2:14:12</span>
+                <span><i class="fa-solid fa-circle-play fa-3x"></i></span>
+                </a>
+              </div>
+              <a href="watch.html">
+                <div class="card-body  pt-2 ml-2 p-0">
+                  <p class="card-title">Alparslan: Büyük Selçuklu 26. Bölüm</p>
+                </div>
+              </a>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block"><i class="fa-solid fa-eye"></i><span> 2,944,236 مشاهدة</span></span>
+                  <i class="fa-solid fa-hourglass-end"></i><span> قبل شهرين </span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img ">
+                <img src="img/icons/arslan.jpg" alt="Channel Img" class="rounded-circle my-2 mr-3" width="50px">
+                <span class="card-text">Alparslan: Büyük Selçuklu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
+
+    
+
+
+
+    
+
+</body>
+</html>
